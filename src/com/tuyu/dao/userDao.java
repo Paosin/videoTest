@@ -389,4 +389,17 @@ public class userDao {
 		return row;
 
 	}
+
+	public boolean addUser(UserEntity userEntity) {
+		//insert语句
+		String strInster="insert into userinfo(account,password,email,power) values(?,?,?,?)";
+		List<String> paras=new ArrayList<>();
+		paras.add(userEntity.getAccount());
+		paras.add(userEntity.getPassword());
+		paras.add(userEntity.getEmail());
+		paras.add(String.valueOf(userEntity.getPower()));
+		JDBCutil db=new JDBCutil();
+		Connection conntion = db.getConntion();
+		return false;
+	}
 }
