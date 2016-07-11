@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>惠家美食生活</title>
+<meta name="keywords" content="美食" />
+<meta name="description" content="美食" />
+<link rel="stylesheet" type="text/css" href="/videoTest/style/common.css"/>
+<script type="text/javascript" src="js/life/common.js"></script>
+<script type="text/javascript" src="js/life/Func.js"></script>
+<script type="text/javascript" src="js/life/jq.js"></script>
+</head>
+<body>
+<a href="/"><img src="/videoTest/images/life/header.jpg" width="1420" height="288" /></a><div id="header_bar" class="big_container">
+  <div class="container"> <a href="../homepage.jsp">返回首页</a>| <span class="telephone">服务热线：<span>110--110-110</span></span></div>
+</div>
+<div id="header">
+<div class="container">
+  <div class="left">
+    <div class="logo"></div>
+  </div>
+</div>
+<div id="index_main" class="container">
+  <div id="box_video"><img src="/videoTest/images/life/top.jpg" alt="" /><br />
+  </div>
+  <div id="box_news" class="box_1">
+    <div class="box_content">
+      <dl class="list list_1">
+        <dt><a href="../contact.html" title="" target="_blank" ><i></i>公司联系方式</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>金惠家网站改版上线</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i> 金惠家美食网站</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>金惠家专访</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>金惠家微博微信平台建立</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>金惠家加盟商及供应商参观</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>金惠家中央大厨房公众开放日</a></dt>
+        <dd>[2016-06-26]</dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="box_activity" class="box_1">
+    <div class="box_content">
+      <dl class="list list_1">
+        <dt><a href="###" title="" target="_blank" ><i></i>后湖店开业，满10元立减1元</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>超级早餐套装组合</a></dt>
+        <dd>[2016-06-26]</dd>
+        <dt><a href="###" title="" target="_blank" ><i></i>传统汽水肉蒸蛋新品上市</a></dt>
+        <dd>[2016-06-26]</dd>
+      </dl>
+      <div class="clear"></div>
+      <div class="ad">
+        <ul>
+          <li><a href="/" target="_blank"><img src="/videoTest/images/life/ad.png"   alt="新品上市" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div id="box_joining_mode" class="box_1">
+    <div class="box_title"><span class="text"></span>
+      <div class="clear"></div>
+    </div>
+    <div class="box_content">
+      <ul>
+        <li><a href="###"><img src="/videoTest/images/life/join_mode_1.png" /></a></li>
+        <li><a href="###"><img src="/videoTest/images/life/join_mode_2.png" /></a></li>
+        <li><a href="###"><img src="/videoTest/images/life/join_mode_3.png" /></a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="bottom_info" class="big_container">
+  <div class="container">
+    <div class="box_left"> <b>成都理工管理有限公司</b><br />
+      地址：中国成都市XXX<br />
+      微博：<a href="http://weibo.com/u/543031222" target="_blank">@FSPC</a>
+      <div class="telephone">全国服务热线：<span>11111-1111-11</span></div>
+    </div>
+    <div class="box_center">
+      <div class="text"> 惠家美食<br />
+        SINA WEIBO: <a href="http://weibo.com/u/543031222" target="_blank">FSPC</a> </div>
+      <div class="links"> <a href="###">在线报名</a>/ <a href="../contact.html">联系我们</a> </div>
+    </div>
+    <div class="box_right"> <a href="###"></a> <a href="http://weibo.com/u/543031222" class="a_weibo" target="_blank"></a> <a href="###" class="a_contact"></a> </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<div id="footer" class="big_container">
+ 
+
+$(function(){
+	var top_class_id=parseInt("{@top_class_id}");	
+	if(top_class_id){
+		$("#header .nav a[href$='="+top_class_id+"']").addClass("current");
+	}
+});
+</script>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+	var obj_slide_images=$("#banner .slide_images");
+	var str="";
+	for(var i=1;i<=5;i++){
+		var obj="<div class='swf swf_"+i+"' val="+i+"></div>";
+		$(obj).appendTo(obj_slide_images);
+	}
+
+	$.getScript("js/jquery.cycle.js",function(){
+		obj_slide_images.cycle({
+			fx:"fade",
+			ease: 'easeInOutQuint',
+			pager: $("#banner .slide_buttons .container div"),
+			speed:400,
+			pagerAnchorBuilder: function(i, el) {
+				var button="<a href=\"javascript:void(0)\" val="+i+"></a>";
+				return button;
+			},
+			timeout:5000,
+			after:function(a,b,c){
+				$(a).html("");
+				var n=$(b).attr("val");
+				var ni="00"+n;
+				getFla({obj:$(".swf_"+n,obj_slide_images),fla_src:"images/banner/index/"+ni.substr(ni.length-3,3)+".swf",width:1360,height:455})
+			}
+		});
+	})
+});</script>
