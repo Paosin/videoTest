@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+                        <!-- 新闻管理servlet -->
+  <servlet>
+    <description>manage News</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.test.service.NewsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/NewsServlet</url-pattern>
+  </servlet-mapping>
+
+
+   <servlet>
+        <servlet-name>Connector</servlet-name>
+        <servlet-class>net.fckeditor.connector.ConnectorServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Connector</servlet-name>
+        <url-pattern>/fckeditor/editor/filemanager/connectors/*</url-pattern>
+    </servlet-mapping>
+    
+    
+                         <!-- 用户管理servlet -->
+  <servlet>
+    <description>manage Users</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manageUser</servlet-name>
+    <servlet-class>com.test.service.manageUser</servlet-class>
+  </servlet>
+  <servlet>
+    <description>页面跳转</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>pageChange</servlet-name>
+    <servlet-class>com.test.service.pageChange</servlet-class>
+  </servlet>
+
+  
+    <servlet-mapping>
+    <servlet-name>manageUser</servlet-name>
+    <url-pattern>/servlet/manageUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>pageChange</servlet-name>
+    <url-pattern>/servlet/pageChange</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+</web-app>

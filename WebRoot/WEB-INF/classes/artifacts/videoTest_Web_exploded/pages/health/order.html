@@ -1,0 +1,128 @@
+<head>
+<meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<title>填写预约信息－老中医</title>
+<link rel="stylesheet" href="https://gss0.bdstatic.com/-KQWsjik0QkH8tyhnq/static/pc/201606241508/asset/order/order.css"/>
+</head>
+<body>
+<div class="wrap"><div class="title">
+<p><a href="../homepage.jsp">首页</a> >
+ <a href="">医生详情页</a> > 填写预约信息</p>
+ </div>
+ <div class="container">
+ <p class="doctor-title">已选择的医生</p>
+ <div class="doctor-info"><div class="info-pic">
+ <img src="/videoTest/images/oldDoctor.jpg">
+ </div>
+ <div class="infos">
+ <div class="info-title"><div>老中医</div>
+ </div>
+ </div>
+<div class="write-list">
+<p class='doctor-title'>请填写预约信息<span>(输入的预约信息，我们将为你保密)</span>
+<span class="right-info"><span>*</span>为必填项</span></p>
+<table>
+<tr>
+<td class="label">就诊人</td>
+<td class="essential-mark">
+<span class="star-red">*</span>
+</td>
+<td><div class="widget-input" id="widget-input-name">
+<input type="text" id="patient-name" >
+<span class="right" style="display:none;"><i class="instant-state fa fa-check-circle"></i></span>
+<span class="wrong" style="display:none;"><i class="instant-state fa fa-times-circle"></i><i id="name-wrong-info"></i></span>
+</div>
+</td>
+</tr>
+<tr id="id-card-tr" >
+<td class="label">身份证号</td>
+<td class="essential-mark"><span class="star-red">*</span></td>
+<td><div class="widget-input">
+<input type="text" id="id-card" >
+<span class="right" style="display:none;"><i class="instant-state fa fa-check-circle"></i></span>
+<span class="wrong" style="display:none;"><i class="instant-state fa fa-times-circle"></i><i id="idcard-wrong-info"></i></span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="label">联系手机</td>
+<td class="essential-mark">
+<span class="star-red">*</span>
+</td>
+<td>
+<div class="widget-input">
+<input type="text" id="phone-number">
+<span class="right" style="display:none;"><i class="instant-state fa fa-check-circle"></i></span>
+<span class="wrong" style="display:none;"><i class="instant-state fa fa-times-circle"></i><i id="phone-wrong-info"></i></span>
+</div>
+</td>
+</tr>
+<tr>
+<td>疾病名称</td>
+<td>
+<span class="star-red">*</span>
+</td>
+<td>
+<div class="widget-input">
+<input id="disease-name" type="text" placeholder="">
+<span class="right" id="disease-name-right-info" style="display:none;"><i class="instant-state fa fa-check-circle"></i></span>
+<span class="wrong" id="disease-name-wrong-info" style="display:none;">
+<i class="instant-state fa fa-times-circle"></i>
+<i class="wrong-info"></i>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td class="label">病情描述</td>
+<td class="essential-mark"><span class="star-red">*</span></td>
+<td>
+<div class="widget-textarea">
+<div class="widget-textarea-wrap">
+<textarea id="condition" placeholder="描述主要症状、患病时间及治疗情况，以便医生更好地帮助你。">
+</textarea>
+</div>
+<p><i>100</i>字</p>
+<div class="widget-instant-right-state">
+<span class="right" style="display:none;">
+<i class="instant-state fa fa-check-circle"></i>
+</span>
+</div>
+<div class="widget-instant-wrong-state">
+<span class="wrong" style="display:none;">
+<i class="instant-state fa fa-times-circle"></i>
+<i id="dis-wrong-info"></i>
+</span>
+</div>
+</div>
+</td>
+</tr>
+<td>
+<div class="widget-input">
+<input id="agreement" type="checkbox" checked="checked">
+<label for="agreement">同意</label>
+<span class="agreement">
+<a href="" target="_blank">《用户协议》</a>
+</span>
+<span class="wrong widget-wrong" style="display:none">
+<i class="instant-state fa fa-times-circle"></i>
+<i>您还未同意用户协议</i>
+</span>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+</td>
+<td>
+<div class="widget-input submit-button" style="margin-top:-5px;">
+<span id="submit-order" class="submit-but">提交预约单</span>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
